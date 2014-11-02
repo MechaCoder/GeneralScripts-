@@ -1,6 +1,7 @@
 <head>
-	<?php if(defined($titleVal)){}else{$titleVal = "Untitled2";} ?>
-	<title><?php echo $titleVal; ?></title>
+	<title> <?php try {echo $titleVal;} catch (Exception $e) {echo "untitled";}	?> </title>
+	<!-- jquery input -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- CSS import -->
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
@@ -11,8 +12,6 @@
 	<script type="text/javascript" src="js\bootstrap.js"></script>
 	<script type="text/javascript" src="js\bootstrap.min.js"></script>
 	<script type="text/javascript" src="js\npm.js"></script>
-	<!-- jquery input -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Orgnial Devoper Matthew Proudman -->
+	<!-- Orgnial Devoper  -->
 	<!-- used by [yourname] -->
 </head>
